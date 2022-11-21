@@ -26,7 +26,21 @@ h1{
     font-size: 3em;
     font-weight: 900;
     padding-left: 80px;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 ul{
     padding-top: 15px;
@@ -45,11 +59,8 @@ a{
     font-weight: 700;
 }
 
-
-
-
 /* primera seccion*/
-#importe{
+#colaboracion{
     color: #FF0090;
     text-transform: uppercase;
     font-size: 20px;
@@ -86,7 +97,6 @@ h2{
 .ong{
     display: flex;
     justify-content: space-around;
-
 }
 
 h3{
@@ -143,11 +153,21 @@ div p{
     align-items: center;
 }
 
+#rec{
+    position:absolute; 
+    z-index:1;
+}
+
 /* formulario */
 .formulario{
     display: flex;
     justify-content: center;
-    margin: 200px 0;
+    margin: 500px;
+}
+
+.formu{
+    background-image: url(../img/fondo2.png);
+    background-repeat: no-repeat;
 }
 
 form{
@@ -207,6 +227,11 @@ button{
     text-align: center;
     border-color: #FF0090;
     font-weight: 700;
+}
+
+button:hover{
+    background-color: #181E4B;
+    color: #ffffff;
 }
 
 
@@ -302,8 +327,10 @@ h3{
     width: 450px;
 }
 
-
-
+#rec{
+    position: absolute;
+    visibility: hidden;
+}
 
 
 
@@ -319,6 +346,11 @@ input{
 
 textarea{
     width: 450px;
+}
+
+
+.formu{
+    background: none;
 }
 
 
