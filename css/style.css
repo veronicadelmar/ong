@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0; 
+}
+
+/* header */
+
+header{
+    background-image: url("../img/header.png");
+    background-repeat: no-repeat;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    padding-top: 50px;
+}
+
+.blanco{
+    color: #ffffff;
+}
+
+h1{
+    color: #FF0090;
+    font-size: 3em;
+    font-weight: 900;
+    padding-left: 80px;
+}
+
+ul{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #181E4B;
+    font-weight: 700;
+}
+
+
+
+
+/* primera seccion*/
+#importe{
+    color: #FF0090;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 120px;
+}
+
+h2{
+    color: #181E4B;
+    font-weight: 600;
+    font-size: 4rem;
+    padding-left: 145px;
+}
+
+.nuestro{
+    color: #5E6282;
+    padding-left: 120px;
+}
+
+.one{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-bottom: 100px;
+}
+
+.manos{
+    margin: auto;
+    height: 500px;
+}
+
+
+/* ong recomendadas */
+
+.ong{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+h3{
+    background: #FB2780;
+    color: #ffffff;
+    border-radius: 0px 32px 0px 0px;
+    font-size: 3rem;
+    font-weight: 400px;
+    width: 750px;
+    height: 70px;
+    text-align: center;
+    padding-top: 8px;
+    margin-bottom: 50px;
+}
+
+h4{
+    color: #1D234F;
+    font-weight: 400px;
+    margin: 15px 25px;
+}
+
+div p{
+    color: #718096;
+    margin: 25px;
+    font-size: 12px;
+}
+
+.ong div .img{
+    width: 290px;
+    border-radius: 32px 0px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.ong .item{
+    box-shadow: 0px 4px 4px rgba(192, 189, 189, 0.25);
+    border-radius: 25px;
+    width: 290px;
+    height: 400px;
+    border-radius: 25px;
+}
+
+.love{
+    display: inline;
+    padding: 5px 30px;
+    border: solid 1px #FF0090;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.box2{
+    display: flex;
+    align-items: center;
+}
+
+/* formulario */
+.formulario{
+    display: flex;
+    justify-content: center;
+    margin: 200px 0;
+}
+
+form{
+    width: 700px;
+    height: 800px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+h5{
+    font-size: 38px;
+    text-align: center;
+    font-weight: 700;
+    color: #181E4B;
+    margin: 80px 0 40px 0;
+}
+
+.items{
+    font-size: 11px;
+}
+
+form p{
+    color: #718096;
+    text-align: center;
+}
+
+.box{
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1.5px 1.5px rgba(0, 0, 0, 0.15);
+    border-radius: 18px;
+}
+
+input{
+    width: 570px;
+    height: 50px;
+    padding-left: 20px;
+    display: block;
+    margin: auto;
+}
+
+textarea{
+    width: 570px;
+    height: 250px;
+    padding: 20px 0 0 20px;
+    display: block;
+    margin: auto;
+}
+
+button{
+    display: block;
+    margin: 50px auto;
+    width: 180px;
+    height: 60px;
+    background: #FF0090;
+    border-radius: 30px;
+    color: #ffffff;
+    text-align: center;
+    border-color: #FF0090;
+    font-weight: 700;
+}
+
+
+
+/* pie de pagina */
+footer{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 50px 0 10px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px 25px 0 0;
+}
+
+footer p{
+    color: #FF0090;
+    font-size: 55px;
+    font-weight: 900;
+    padding-left: 100px;
+}
+
+footer div p{
+    color: #718096;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+footer a p:hover{
+    color: #181E4B;
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/*Pantalla Vertical*/
+
+@media (max-width: 950px) and (orientation:portrait){
+
+/* header */
+
+header{
+    display: block;
+}
+
+.blanco{
+    color: #181E4B;
+}
+
+/* primera seccion*/
+.one{
+    grid-template-columns: 1fr;
+}
+
+#importe{
+    padding-left: 10px;
+}
+
+h2{
+    padding-left: 35px;
+    font-size: 2.5rem;
+}
+
+.nuestro{
+    padding-left: 10px;
+}
+
+.manos{
+    margin: auto;
+    height: 250px;
+}
+
+/* ong recomendadas */
+
+.ong{
+    flex-direction: column;
+}
+
+.ong .item{
+    width: auto;
+    margin: 25px 10px;
+}
+
+h3{
+    font-size: 2rem;
+    width: 450px;
+}
+
+
+
+
+
+
+/* formulario */
+.formulario{
+    width: 500px;
+    margin: auto;
+}
+
+input{
+    width: 450px;
+}
+
+textarea{
+    width: 450px;
+}
+
+
+/* pie de pagina */
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+footer{
+        grid-template-columns: 1fr;
+        margin: 20px 10px;
+        padding: 25px 0 5px 0;
+  }
+
+footer p{
+        text-align: center;
+        padding-left: 0;
+    }
+
+.redes{
+        margin: 15px 0 10px 0;
+    }
+
+}

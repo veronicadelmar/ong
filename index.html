@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- metadatos -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CeONG centro de ong, es una empresa donde puedes conseguir cualquier 'ONG' organización sin fines de lucros">
+    <!-- my style / icon (use el link icon para colocar una imagen con la palabra ceong "como si fuera un logo en la solapa de la pagina web") / boostrap (use boostrap para detalles etc...etc...) -->
+    <link rel="shortcut icon" href="img/ceong.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- titulo -->
+    <title>CeONG</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1>CeONG</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Bienvenido</a></li>
+                <li><a href="#" class="dropdown-toggle">ONG's</a></li>
+                <li><a href="#">Sumar mi ONG</a></li>
+                <li><a href="#" class="dropdown-toggle blanco">ESP</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- primera seccion -->
+    <section class="one">
+        <div>
+            <p id="importe">Encuentra una ong y colabora con ella</p>
+            <h2>Bienvenido al Centro de ONG</h2>
+            <p class="nuestro">Nuestro trabajo tiene como objetivo romper el círculo vicioso de la pobreza y el aislamiento social y restaurar la esperanza de un futuro mejor.</p>
+            <!--cuidado con el boton que al clickearlo te da error porque no le coloque todavia un evento -->
+            <button>Descubre más</button>
+        </div>
+        
+
+        <img class="manos" src="img/manos.png" alt="manos con corazón">
+    </section>
+    
+    <!-- ing recomendadas -->
+    <section>
+        <h3>ONGs más recomendadas</h3>
+        <div class="ong">
+             <div class="item">
+                 <img class="img" src="img/donandoVida.png" alt="persona donando sangre 'donando vida'">
+                 <h4>Donando vida</h4>
+                 <p>Nuestro trabajo tiene como objetivo romper el círculo vicioso de la pobreza y el aislamiento social y restaurar la esperanza de un futuro mejor.</p>
+
+                 <div class="box2">
+                    <p class="items">Blood Donation NGO</p>
+                    <div class="love">
+                        <img class="icon" src="img/logos/love.svg" alt="corazón">
+                    </div>
+                 </div>
+             </div>
+
+            <div class="item">
+                 <img class="img" src="img/ayudadores.png" alt="persona ayudando">
+                 <h4>Ayudadores</h4>
+                 <p>Nuestro trabajo tiene como objetivo romper el círculo vicioso de la pobreza y el aislamiento social y restaurar la esperanza de un futuro mejor.</p>
+
+                 <div class="box2">
+                    <p class="items">Food Donation NGO</p>
+                    <div class="love">
+                         <img class="icon" src="img/logos/love.svg" alt="corazón">
+                    </div>
+                 </div>
+             </div>
+
+            <div class="item">
+                <img class="img" src="img/ninosDelFuturo.png" alt="Niños del futuro">
+                <h4>Niños del futuro</h4>
+                <p>Nuestro trabajo tiene como objetivo romper el círculo vicioso de la pobreza y el aislamiento social y restaurar la esperanza de un futuro mejor.
+                </p>
+
+                <div class="box2">
+                    <p class="items">Child Care NGO</p>
+                    <div class="love">
+                         <img class="icon" src="img/logos/love.svg" alt="corazón">
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="formulario">
+        <form action="#" method="post">
+            <h5>Quiero sumar mi ONG</h5>
+            <p>Déjanos los datos de tu ONG y te contactaremos</p>
+      
+               <label for="mail"></label>
+               <input class="box" placeholder="Email" type="email" id="mail" name="user_mail">
+            
+               <label for="nombre"></label>
+               <input class="box" placeholder="Nombre de la ONG" type="text" id="nameong" name="user_nameong">
+             
+               <label for="tarea"></label>
+               <textarea class="box" placeholder="Tareas que desarrolla la ONG" id="tarea" name="tarea"></textarea>
+               <!--cuidado con el boton que al clickearlo te da error porque no le coloque todavia un evento -->
+               <button>Enviar</button>
+           </form>
+    </section>
+
+<!-- pie de pagina -->
+    <footer>
+        <p>CeONG</p>
+        <div>
+          <a href="#"><p>Política de Privacidad</p></a>
+          <a href="#"><p>Privacidad y Cookies</p></a>
+          <a href="https://goo.gl/maps/aJGcmyv5nUpHCPAk7" target="_blank"><p>Mapa del sitio</p></a>
+        </div>
+        <div class="redes">
+            <a href="#">
+                <img class="icon" src="img/logos/logolinkedin.png" alt="logo de linkedin">
+            </a>
+            <a href="#">
+                <img class="icon" src="img/logos/logoinstagram.png" alt="logo de instagram">
+             </a>
+             <a href="#">
+                 <img class="icon" src="img/logos/logofacebook.png" alt="logo de facebook">
+             </a>
+         </div>
+    </footer>
+<!-- Javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>  
+</body>
+</html>
